@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="stylesheet" href="cssfile.css">
+</head>
+<body>
+    <div class="change">
+        <img src="moon.png" id="icon" height="30px" width="30px">
+        <h1>THIS IS IT</h1>
+        <h3>the Apocalypse</h3>
+    </div>
+    <script>
+        var icon=document.getElementById("icon");
+        icon.onclick=function(){
+            document.body.classList.toggle("darktheme");
+            if(document.body.classList.contains("darktheme"))
+                icon.src="sum.png";
+            else
+                icon.src="moon.png";
+        }
+    </script>
+</body>
+
+</html>
